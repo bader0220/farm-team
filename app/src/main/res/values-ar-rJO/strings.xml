@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">smart farm</string>
+    <string name="welcome_text">مرحبا بك في المزارع الذكية</string>
+    <string name="login_to_continue">"قم بتسجيل الدخول للاستمرار"</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="password">كلمة السر</string>
+    <string name="forget_password">هل نسيت كلمة السر؟</string>
+
+
+</resources>

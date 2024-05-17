@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">smart farm</string>
+    <string name="welcome_text">Hello, Smart Farms</string>
+    <string name="login_to_continue">"Login to cintinue "</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <!-- Strings related to login -->
+
+</resources>
