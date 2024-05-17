@@ -7,6 +7,10 @@
     <string name="login">تسجيل الدخول</string>
     <string name="password">كلمة السر</string>
     <string name="forget_password">هل نسيت كلمة السر؟</string>
+    <string name="search">هل تبحث عن شيء ما</string>
+    <string name="home">الرئيسية</string>
+    <string name="corps">المحاصيل</string>
+    <string name="profile">ملفي الشخصي</string>
 
 
 </resources>
