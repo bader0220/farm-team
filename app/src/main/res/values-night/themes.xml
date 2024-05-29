@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
         <item name="fontFamily">@font/rubik_regular</item>
@@ -54,20 +54,47 @@
         <item name="backgroundTint">?attr/colorSecondary</item>
     </style>
 
-
-    <style name="editTextLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
-        <item name="boxStrokeWidth">0dp</item>
-        <item name="boxStrokeWidthFocused">0dp</item>
-        <item name="boxBackgroundColor">?attr/colorSurfaceDim</item>
-        <item name="boxCornerRadiusTopStart">10dp</item>
-        <item name="boxCornerRadiusTopEnd">10dp</item>
-        <item name="boxCornerRadiusBottomStart">10dp</item>
-        <item name="boxCornerRadiusBottomEnd">10dp</item>
-    </style>
-
-
     <style name="displaySmall" parent="TextAppearance.Material3.DisplaySmall">
         <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
     </style>
+    <style name="bodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="labelMedium" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+
+
+    <style name="btnStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnDelete" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="backgroundTint">?attr/colorOnErrorContainer</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="icon">@drawable/delete</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnUpdate" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="icon">@drawable/edit</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
 </resources>
 

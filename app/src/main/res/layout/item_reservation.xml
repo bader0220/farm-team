@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgTrader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/place_holder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_reservation"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cat_card_single_spacing"
+                android:text="@string/the_trader"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+
+            <TextView
+                android:id="@+id/txtTraderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/loren"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cat_card_single_spacing"
+                android:text="@string/the_farm"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+
+            <TextView
+                android:id="@+id/txtFarmTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/loren"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cat_card_single_spacing"
+                android:text="@string/the_amount"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/txtAmount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ellipsize="end"
+                   android:maxLines="1"
+                   android:text="10"
+                   android:textAppearance="@style/TextAppearance.Material3.TitleLarge"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ellipsize="end"
+                   android:maxLines="1"
+                   android:text="@string/ton"
+                   android:textAppearance="@style/TextAppearance.Material3.TitleSmall"/>
+
+           </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtCreateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cat_card_single_spacing"
+                android:text="2020-23-23 12:00"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,40 +1,86 @@
 package me.smartfarm.data.models;
 
-import java.util.Date;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Farm {
+public class Farm implements Serializable {
     private String title;
-    private List<List<String>> images;
+    private List<String> images = new ArrayList<>();
     private String description;
-    private Date harvestDateFrom;
-    private Date harvestDateTo;
-    private String corpType;
-    private String uom;
+    private String harvestDateFrom;
+    private String harvestDateTo;
+    private int corpTypeId;
+    private double unitPrice;
     private long creationDate;
-    private User owner;
+    private double totalAmount;
     private double availableAmount;
-    private List<MapPoint> area;
-    private String city;
-    private String neighborhood;
+    private String ownerId;
+    private List<MapPoint> area = new ArrayList<>();
+    private List<Reservation> reservations = new ArrayList<>();
+    private int cityId;
+    private int neighborhoodId;
 
     public Farm() {
     }
 
-    public Farm(String title, List<List<String>> images, String description, Date harvestDateFrom, Date harvestDateTo, String corpType, String uom, long creationDate, User owner, double availableAmount, List<MapPoint> area, String city, String neighborhood) {
+    public Farm(String title, List<String> images, String description, String harvestDateFrom, String harvestDateTo, int corpTypeId, double unitPrice, long creationDate, double totalAmount, double availableAmount, String ownerId, List<MapPoint> area, List<Reservation> reservations, int cityId, int neighborhoodId) {
         this.title = title;
         this.images = images;
         this.description = description;
         this.harvestDateFrom = harvestDateFrom;
         this.harvestDateTo = harvestDateTo;
-        this.corpType = corpType;
-        this.uom = uom;
+        this.corpTypeId = corpTypeId;
+        this.unitPrice = unitPrice;
         this.creationDate = creationDate;
-        this.owner = owner;
+        this.totalAmount = totalAmount;
         this.availableAmount = availableAmount;
+        this.ownerId = ownerId;
         this.area = area;
-        this.city = city;
-        this.neighborhood = neighborhood;
+        this.reservations = reservations;
+        this.cityId = cityId;
+        this.neighborhoodId = neighborhoodId;
+    }
+
+    public Farm(String title, List<String> images, String description, String harvestDateFrom, String harvestDateTo, int corpTypeId, double unitPrice, long creationDate, double availableAmount, String ownerId, List<MapPoint> area, int cityId, int neighborhoodId) {
+        this.title = title;
+        this.images = images;
+        this.description = description;
+        this.harvestDateFrom = harvestDateFrom;
+        this.harvestDateTo = harvestDateTo;
+        this.corpTypeId = corpTypeId;
+        this.unitPrice = unitPrice;
+        this.creationDate = creationDate;
+        this.availableAmount = availableAmount;
+        this.ownerId = ownerId;
+        this.area = area;
+        this.cityId = cityId;
+        this.neighborhoodId = neighborhoodId;
+    }
+
+    public Farm(String title, List<String> images, String description, String harvestDateFrom, String harvestDateTo, int corpTypeId, double unitPrice, long creationDate, double availableAmount, String ownerId, List<MapPoint> area, List<Reservation> reservations, int cityId, int neighborhoodId) {
+        this.title = title;
+        this.images = images;
+        this.description = description;
+        this.harvestDateFrom = harvestDateFrom;
+        this.harvestDateTo = harvestDateTo;
+        this.corpTypeId = corpTypeId;
+        this.unitPrice = unitPrice;
+        this.creationDate = creationDate;
+        this.availableAmount = availableAmount;
+        this.ownerId = ownerId;
+        this.area = area;
+        this.reservations = reservations;
+        this.cityId = cityId;
+        this.neighborhoodId = neighborhoodId;
+    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
     public String getTitle() {
@@ -45,11 +91,11 @@ public class Farm {
         this.title = title;
     }
 
-    public List<List<String>> getImages() {
+    public List<String> getImages() {
         return images;
     }
 
-    public void setImages(List<List<String>> images) {
+    public void setImages(List<String> images) {
         this.images = images;
     }
 
@@ -61,36 +107,36 @@ public class Farm {
         this.description = description;
     }
 
-    public Date getHarvestDateFrom() {
+    public String getHarvestDateFrom() {
         return harvestDateFrom;
     }
 
-    public void setHarvestDateFrom(Date harvestDateFrom) {
+    public void setHarvestDateFrom(String harvestDateFrom) {
         this.harvestDateFrom = harvestDateFrom;
     }
 
-    public Date getHarvestDateTo() {
+    public String getHarvestDateTo() {
         return harvestDateTo;
     }
 
-    public void setHarvestDateTo(Date harvestDateTo) {
+    public void setHarvestDateTo(String harvestDateTo) {
         this.harvestDateTo = harvestDateTo;
     }
 
-    public String getCorpType() {
-        return corpType;
+    public int getCorpTypeId() {
+        return corpTypeId;
     }
 
-    public void setCorpType(String corpType) {
-        this.corpType = corpType;
+    public void setCorpTypeId(int corpTypeId) {
+        this.corpTypeId = corpTypeId;
     }
 
-    public String getUom() {
-        return uom;
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setUom(String uom) {
-        this.uom = uom;
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
     }
 
     public long getCreationDate() {
@@ -101,20 +147,20 @@ public class Farm {
         this.creationDate = creationDate;
     }
 
-    public User getOwner() {
-        return owner;
-    }
-
-    public void setOwner(User owner) {
-        this.owner = owner;
-    }
-
     public double getAvailableAmount() {
         return availableAmount;
     }
 
     public void setAvailableAmount(double availableAmount) {
         this.availableAmount = availableAmount;
+    }
+
+    public String getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(String ownerId) {
+        this.ownerId = ownerId;
     }
 
     public List<MapPoint> getArea() {
@@ -125,21 +171,29 @@ public class Farm {
         this.area = area;
     }
 
-    public String getCity() {
-        return city;
+    public int getCityId() {
+        return cityId;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
-    public String getNeighborhood() {
-        return neighborhood;
+    public int getNeighborhoodId() {
+        return neighborhoodId;
     }
 
-    public void setNeighborhood(String neighborhood) {
-        this.neighborhood = neighborhood;
+    public void setNeighborhoodId(int neighborhoodId) {
+        this.neighborhoodId = neighborhoodId;
     }
 
+    public double getTotalAmount() {
+        return totalAmount;
+    }
 
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
 }
+
+

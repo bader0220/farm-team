@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/place_holder" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/user_name"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_recieve"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_gravity="start"
+                android:id="@+id/txtMessageContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loren" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

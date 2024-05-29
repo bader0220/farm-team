@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">smart farm</string>
     <string name="welcome_text">Hello, Smart Farms</string>
-    <string name="login_to_continue">"Login to cintinue "</string>
+    <string name="login_to_continue">"Login to continue "</string>
     <string name="email">Email</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
@@ -10,22 +10,263 @@
     <string name="home">Home</string>
     <string name="corps">Corps</string>
     <string name="profile">Profile</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+    <string name="title">Title</string>
+    <string name="farm_description">Farm Description</string>
+    <string name="harvest_date">Harvest Date</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="corp_type">Corp Type</string>
+    <string name="uom">Unit Of Measure</string>
+    <string name="available_amount">Available Amount(Ton)</string>
+    <string name="unit_price">Ton Price</string>
+    <string name="city">City</string>
+    <string name="neighborhood">Neighborhood</string>
+    <string name="save_farm">Save Farm</string>
+    <string name="tomato">Tomato</string>
+    <string name="banana">Banana</string>
+    <string name="apple">Apple</string>
+    <string name="orange">Orange</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="corn">Corn</string>
+    <string name="lemon">Lemon</string>
+    <string name="pineapple">Pineaaplle</string>
+    <string name="rain">Rain</string>
+    <string name="all_types">Corps Types</string>
+    <string name="view_all">View All</string>
+    <string name="how_is_weather_today">How is the weather today?</string>
+    <string name="login_as_guest">Login as guest</string>
+    <string name="enter_password">Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_last_name">Last Name</string>
+    <string name="enter_first_name">First Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="create_account">Create Account</string>
+    <string name="farmer_description">About you(optional)</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string-array name="crops">
+        <item>Tomato</item>
+        <item>Banana</item>
+        <item>Apple</item>
+        <item>Orange</item>
+        <item>Strawberry</item>
+        <item>Grapes</item>
+        <item>Mango</item>
+        <item>Pineapple</item>
+        <item>Watermelon</item>
+        <item>Peach</item>
+        <item>Pear</item>
+        <item>Kiwi</item>
+        <item>Cherry</item>
+        <item>Blueberry</item>
+        <item>Raspberry</item>
+        <item>Blackberry</item>
+        <item>Lemon</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!-- Strings related to login -->
+    <string name="register_as">Register as</string>
+    <string name="farmer">Farmer</string>
+    <string name="trader">Trader</string>
+    <string name="resident_city">Resident City</string>
+    <string name="tab_login">Login</string>
+    <string name="tab_register">Register</string>
+    <string name="select_picture">Select Profile Picture</string>
+    <string name="required">Should not be empty</string>
+    <string name="password_is_too_short">Password is too short</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="selecte_user_type">Please Select your type</string>
+    <string name="select_residence_city">plase select residence city</string>
+    <string name="select_residence_neighborhood">Plase select neighborhood</string>
+    <string name="loading">Loading...</string>
+    <string name="invalid_credintials">Email or password is not correct</string>
+    <string name="invalid_amount">Invalid Amount</string>
+    <string name="invalid_number">Invalid Number</string>
+    <string name="invalid_price">Invalid Price</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="date_to_after_date_from">Harevest date must be more that harvest date to</string>
+    <string name="recently_added">Recently Added</string>
+    <string name="loren">\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="user_name">User name</string>
+    <string name="todo">TODO</string>
+    <string name="ton">Ton</string>
+    <string name="contact">Contact</string>
+    <string name="farm_name">"Farm Name "</string>
+    <string name="make_order">Order Now</string>
+    <string name="location">Location</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_farms">My Farms</string>
+    <string name="logout">Signout</string>
+    <string name="coming_orders">Coming Orders</string>
+    <string name="logout_confirm">Confirm Logout</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="orders">Orders</string>
+    <string name="reservtion">Reservations</string>
+    <string name="reservation">Reservations</string>
+    <string name="new_reservation">New Reservations</string>
+    <string name="the_farm">The Farm</string>
+    <string name="the_trader">The Trader</string>
+    <string name="the_amount">The Amount</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="quantity">Quantity</string>
+    <string name="jod">JOD</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="card_number">Card Number</string>
+    <string name="holder_name">Holder Name</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="totaly_reserved">Totally Reserved</string>
+    <string name="delete">Delete</string>
+    <string name="my_reservations">My Reservations</string>
+    <string name="terms_of_service">Terms pf Service</string>
+    <string name="personal_info">Personal</string>
+    <string name="trader_account">(Trader Account)</string>
+    <string name="farmer_account">(Farmer Account)</string>
+    <string name="save">Save</string>
+    <string name="please_wait">Please wait</string>
+    <string name="chat">Chat</string>
+    <string name="delete_confirm">Farm will not be available anymore</string>
+    <string name="cannot_delete">Cannot Delete</string>
+    <string name="cannot_delete_message">Farm is already reserved by more than one trader</string>
+    <string name="you">You</string>
+    <string name="chats">Chats</string>
+    <string name="no_chats_yet">No Chats Y et</string>
+    <string name="no_reservations_yes">No reservations yet</string>
+    <string-array name="jordan_cities">
+        <item>Amman</item>
+        <item>Zarqa</item>
+        <item>Irbid</item>
+        <item>Aqaba</item>
+        <item>Al-Mafraq</item>
+        <item>Madaba</item>
+        <item>As-Salt</item>
+        <item>Jerash</item>
+        <item>Ajloun</item>
+        <item>Maan</item>
+        <item>At-Tafilah</item>
+        <item>Al-Karak</item>
+    </string-array>
 
+
+    <!-- Districts in Amman -->
+    <string-array name="amman_districts">
+        <item>Jabal Amman</item>
+        <item>Abdoun</item>
+        <item>Sweifieh</item>
+        <item>Shmeisani</item>
+        <item>Khalda</item>
+        <item>Al-Jubeiha</item>
+        <item>Marj Al-Hamam</item>
+        <item>Al-Rabieh</item>
+        <item>Al-Bayader</item>
+    </string-array>
+
+    <!-- Districts in Zarqa -->
+    <string-array name="zarqa_districts">
+        <item>New Zarqa</item>
+        <item>Russeifa</item>
+        <item>Al-Dulayl</item>
+        <item>Al-Hashimiyya</item>
+        <item>Birayn</item>
+        <item>Al-Ghabawi</item>
+        <item>Az-Zarqa Al-Jadeedah</item>
+    </string-array>
+
+    <!-- Districts in Irbid -->
+    <string-array name="irbid_districts">
+        <item>City Center</item>
+        <item>Al-Huson</item>
+        <item>Al-Mazar</item>
+        <item>Al-Ramtha</item>
+        <item>Al-Taibeh</item>
+        <item>Beit Ras</item>
+        <item>Al-Barha</item>
+    </string-array>
+
+    <!-- Districts in Aqaba -->
+    <string-array name="aqaba_districts">
+        <item>Al-Hafayer</item>
+        <item>Al-Mahdoud</item>
+        <item>Al-Rashdiyah</item>
+        <item>Al-Shallalah</item>
+        <item>Al-Souq</item>
+        <item>Al-Manara</item>
+    </string-array>
+
+    <!-- Districts in Madaba -->
+    <string-array name="madaba_districts">
+        <item>City Center</item>
+        <item>Al-Jizah</item>
+        <item>Al-Maghtas</item>
+        <item>Al-Muhatta</item>
+        <item>Al-Rumaymin</item>
+        <item>Mount Nebo</item>
+    </string-array>
+
+    <!-- Districts in Salt -->
+    <string-array name="salt_districts">
+        <item>City Center</item>
+        <item>Wadi Shueib</item>
+        <item>Fuheis</item>
+        <item>Mahis</item>
+        <item>Ein Al-Basha</item>
+        <item>Yarqa</item>
+    </string-array>
+
+    <!-- Districts in Jerash -->
+    <string-array name="jerash_districts">
+        <item>City Center</item>
+        <item>Suf</item>
+        <item>Sakib</item>
+        <item>Al-Ketteh</item>
+        <item>Anjara</item>
+    </string-array>
+
+    <!-- Districts in Ma'an -->
+    <string-array name="maan_districts">
+        <item>City Center</item>
+        <item>Petra</item>
+        <item>Al-Husseinieh</item>
+        <item>Al-Jafr</item>
+        <item>Al-Manshiyah</item>
+    </string-array>
+
+    <!-- Districts in Karak -->
+    <string-array name="karak_districts">
+        <item>City Center</item>
+        <item>Al-Mazar</item>
+        <item>Al-Qatraneh</item>
+        <item>Ghor Al-Safi</item>
+        <item>Ghor Al-Mazraa</item>
+    </string-array>
+
+    <!-- Districts in Tafilah -->
+    <string-array name="tafilah_districts">
+        <item>City Center</item>
+        <item>Al-Ain Al-Bayda</item>
+        <item>Buseira</item>
+        <item>Gharandal</item>
+        <item>Rashadiya</item>
+    </string-array>
+
+    <!-- Districts in Ajloun -->
+    <string-array name="ajloun_districts">
+        <item>City Center</item>
+        <item>Anjara</item>
+        <item>Kufranjah</item>
+        <item>Sakhrah</item>
+        <item>Al-Wahadneh</item>
+    </string-array>
+
+    <!-- Districts in Mafraq -->
+    <string-array name="mafraq_districts">
+        <item>City Center</item>
+        <item>Al-Ruwaished</item>
+        <item>Al-Safawi</item>
+        <item>Al-Khalidiyah</item>
+        <item>Al-Mafraq Al-Jadeedah</item>
+    </string-array>
 </resources>

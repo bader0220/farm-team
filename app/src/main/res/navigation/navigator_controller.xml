@@ -3,44 +3,114 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigator_controller"
-    app:startDestination="@id/profileFragment">
+    app:startDestination="@id/home">
 
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/profile"
         android:name="me.smartfarm.ui.main.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_profileFragment_to_corpsFragment"
-            app:destination="@id/corpsFragment" />
+            app:destination="@id/reservations" />
         <action
             android:id="@+id/action_profileFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_profile_to_farmPostFragment"
+            app:destination="@id/farmPostFragment" />
+        <action
+            android:id="@+id/action_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/corpsFragment"
-        android:name="me.smartfarm.ui.main.fragments.CorpsFragment"
+        android:id="@+id/reservations"
+        android:name="me.smartfarm.ui.main.fragments.ReservationsFragment"
         android:label="fragment_corps"
-        tools:layout="@layout/fragment_corps" >
+        tools:layout="@layout/fragment_reservations" >
         <action
             android:id="@+id/action_corpsFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            app:destination="@id/profile" />
         <action
             android:id="@+id/action_corpsFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/home" />
     </fragment>
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/home"
         android:name="me.smartfarm.ui.main.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            app:destination="@id/profile" />
         <action
             android:id="@+id/action_homeFragment_to_corpsFragment"
-            app:destination="@id/corpsFragment" />
+            app:destination="@id/reservations" />
+        <action
+            android:id="@+id/action_home_to_addFarmFragment"
+            app:destination="@id/addFarmFragment" />
+        <action
+            android:id="@+id/action_home_to_farmPostFragment"
+            app:destination="@id/farmPostFragment" />
+        <action
+            android:id="@+id/action_home_to_farmDetailsFragment"
+            app:destination="@id/farmDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFarmFragment"
+        android:name="me.smartfarm.ui.main.fragments.AddFarmFragment"
+        android:label="fragment_add_farm"
+        tools:layout="@layout/fragment_add_farm" >
+        <action
+            android:id="@+id/action_addFarmFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUserInfoFragment"
+        android:name="me.smartfarm.ui.auth.fragments.RegisterUserInfoFragment"
+        android:label="fragment_register_user_info"
+        tools:layout="@layout/fragment_register_user_info" />
+    <fragment
+        android:id="@+id/farmDetailsFragment"
+        android:name="me.smartfarm.ui.main.fragments.FarmDetailsFragment"
+        android:label="fragment_farm_details"
+        tools:layout="@layout/fragment_farm_details" >
+        <action
+            android:id="@+id/action_farmDetailsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/farmPostFragment"
+        android:name="me.smartfarm.ui.main.fragments.FarmPostFragment"
+        android:label="fragment_farm_post"
+        tools:layout="@layout/fragment_farm_post" >
+        <action
+            android:id="@+id/action_farmPostFragment_to_farmDetailsFragment"
+            app:destination="@id/farmDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="me.smartfarm.ui.main.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="me.smartfarm.ui.main.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/chats"
+        android:name="me.smartfarm.ui.main.fragments.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
     </fragment>
 </navigation>

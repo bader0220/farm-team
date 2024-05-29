@@ -23,12 +23,11 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        NavController navController = Navigation.findNavController(this, R.id.navigator_controller);
+        NavController navController = Navigation.findNavController(this, R.id.content_frame);
 
         // Set up Bottom Navigation View with Navigation Controller
         BottomNavigationView bottomNavigationView = findViewById(R.id.cat_bottom_nav);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
-
 //        // Set up Bottom Navigation View with Navigation Controller
 //        BottomNavigationView bottomNavigationView = findViewById(R.id.cat_bottom_nav);
 //        NavigationUI.setupWithNavController(bottomNavigationView, navController);

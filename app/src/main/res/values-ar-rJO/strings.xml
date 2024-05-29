@@ -11,6 +11,263 @@
     <string name="home">الرئيسية</string>
     <string name="corps">المحاصيل</string>
     <string name="profile">ملفي الشخصي</string>
+    <string name="title">العنوان</string>
+    <string name="farm_description">وصف المزرعة</string>
+    <string name="harvest_date">الوقت المتوقع للحصد</string>
+    <string name="from">من</string>
+    <string name="to">الى</string>
+    <string name="corp_type">نوع المحصول</string>
+    <string name="uom">وحدة البيع</string>
+    <string name="available_amount">الكمية المتاحة(طن)</string>
+    <string name="unit_price">سعر الطن</string>
+    <string name="city">المدينة</string>
+    <string name="neighborhood">الحي</string>
+    <string name="save_farm">حفظ</string>
+    <string name="tomato">بندورة</string>
+    <string name="banana">موز</string>
+    <string name="apple">تفاح</string>
+    <string name="orange">برتقال</string>
+    <string name="watermelon">بطيخ</string>
+    <string name="corn">ذرة</string>
+    <string name="lemon">ليمون</string>
+    <string name="pineapple">اناناس</string>
+    <string name="all_types">انواع المحاصيل</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="how_is_weather_today">كيف حال الطقس اليوم</string>
+    <string name="rain">ممطر</string>
+    <string name="login_as_guest">الدخول كزائر</string>
+    <string name="enter_password">كلمة السر</string>
+    <string name="enter_email">البريد الالكتروني</string>
+    <string name="enter_last_name">الاسم الاخير</string>
+    <string name="enter_first_name">الاسم الاول</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="next">التالي</string>
+    <string name="create_account">انشاء حساب</string>
+    <string name="farmer_description">ملخص عنك (اختياري)</string>
+    <string name="register_as">انشاء حساب كـ</string>
+    <string name="farmer">مزارع</string>
+    <string name="trader">تاجر</string>
+    <string name="resident_city">المدينة</string>
+    <string name="tab_login">تسجيل الدخول</string>
+    <string name="tab_register">انشاء حساب</string>
+    <string name="select_picture">اختيار صورة للملف الشخصي</string>
+    <string name="required">لا يمكن ان يكون فارغًا</string>
+    <string name="password_is_too_short">Password is too short</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="password_does_not_match">كلمة السر لا تتطابق</string>
+    <string name="select_residence_city">plase select residence city</string>
+    <string name="select_residence_neighborhood">Plase select neighborhood</string>
+    <string name="loading">Loading...</string>
+    <string name="invalid_credintials">Email or password is not correct</string>
+    <string name="invalid_amount">كمية غير صالحة</string>
+    <string name="invalid_number">Invalid Number</string>
+    <string name="invalid_price">Invalid Price</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="date_to_after_date_from">Harevest date must be more that harvest date to</string>
+    <string name="recently_added">تمت اضافته حديثًا</string>
+    <string name="loren">"لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسكينغ إليت، سيد دو إيوسمد تيمبور إنسيديدونت أوت لابوري إت دولار ماجنا أليكا. أوت إينيم أد مينيم فينيام، كويز نوسترد إكسيرسيتاسيون أولامكو لابوريس نيسي أوت أليكيوب إكس إيا كومودو كونسيكوات. دويس أوت إيروري دولار إن ريبرهيندريت إن فولوبتايت فيليت إسسي سيلوم دولار إيو فيوجيات نيلا بارياتور. إكسكيبتيور سينت أوكايكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت مولليت أنيم آيد إست لابوروم."</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="todo">TODO</string>
+    <string name="ton">طن</string>
+    <string name="contact">اتصال</string>
+    <string name="farm_name">اسم المزرعة</string>
+    <string name="make_order">اطلب الآن</string>
+    <string name="location">الموقع على الخريطة</string>
+    <string name="remaining_amount">الكمية المتبقية</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="my_farms">مزارعي</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="coming_orders">الطلبات القادمة</string>
+    <string name="logout_confirm">هل تريد بالتأكيد تسجيل الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="orders">الطلبات</string>
+    <string name="selecte_user_type">نوع الحساب الرجاء تحديد </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="reservtion">Reservations</string>
+    <string name="reservation">الحجوزات</string>
+    <string name="new_reservation">حجز جديد</string>
+    <string name="the_farm">المزرعة</string>
+    <string name="the_trader">التاجر</string>
+    <string name="the_amount">الكمية</string>
+    <string name="confirm_order">تأكيد الحجز</string>
+    <string name="quantity">الكمية</string>
+    <string name="jod">د.أ</string>
+    <string name="payment_information">معلومات الدفع</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="holder_name">اسم حامل البطاقة</string>
+    <string name="expiration_date">تاريخ الانتهاء</string>
+    <string name="cvv">رقم cvv</string>
+    <string name="totaly_reserved">"محجوز بالكامل "</string>
+    <string name="delete">حذف</string>
+    <string name="my_reservations">حجوزاتي</string>
+    <string name="terms_of_service">بنود الخدمة</string>
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="trader_account">(حساب تاجر)</string>
+    <string name="farmer_account">(حساب مزارع)</string>
+    <string name="save">Save</string>
+    <string name="please_wait">الرجاء الانتظار</string>
+    <string name="chat">Chat</string>
+    <string name="delete_confirm">Farm will not be available anymore</string>
+    <string name="cannot_delete">Cannot Delete</string>
+    <string name="cannot_delete_message">Farm is already reserved by more than one trader</string>
+    <string name="you">You</string>
+    <string name="chats">المحادثات</string>
+    <string name="no_chats_yet">لا توجد محادثات بعد</string>
+    <string name="no_reservations_yes">No reservations yet</string>
+
+    <string-array name="crops">
+        <item>طماطم</item>
+        <item>موز</item>
+        <item>تفاح</item>
+        <item>برتقال</item>
+        <item>فراولة</item>
+        <item>عنب</item>
+        <item>مانجو</item>
+        <item>أناناس</item>
+        <item>بطيخ</item>
+        <item>خوخ</item>
+        <item>كمثرى</item>
+        <item>كيوي</item>
+        <item>كرز</item>
+        <item>توت أزرق</item>
+        <item>توت أحمر</item>
+        <item>توت أسود</item>
+        <item>ليمون</item>
+    </string-array>
+    <string-array name="jordan_cities">
+        <item>عمان</item>
+        <item>الزرقاء</item>
+        <item>اربد</item>
+        <item>العقبة</item>
+        <item>المفرق</item>
+        <item>مادبا</item>
+        <item>السلط</item>
+        <item>جرش</item>
+        <item>عجلون</item>
+        <item>معان</item>
+        <item>الطفيلة</item>
+        <item>الكرك</item>
+    </string-array>
+
+    <!-- Districts in Amman -->
+    <string-array name="amman_districts">
+        <item>جبل عمان</item>
+        <item>Abdoun</item>
+        <item>Sweifieh</item>
+        <item>Shmeisani</item>
+        <item>Khalda</item>
+        <item>Al-Jubeiha</item>
+        <item>Marj Al-Hamam</item>
+        <item>Al-Rabieh</item>
+        <item>Al-Bayader</item>
+    </string-array>
+
+    <!-- Districts in Zarqa -->
+    <string-array name="zarqa_districts">
+        <item>New Zarqa</item>
+        <item>Russeifa</item>
+        <item>Al-Dulayl</item>
+        <item>Al-Hashimiyya</item>
+        <item>Birayn</item>
+        <item>Al-Ghabawi</item>
+        <item>Az-Zarqa Al-Jadeedah</item>
+    </string-array>
+
+    <!-- Districts in Irbid -->
+    <string-array name="irbid_districts">
+        <item>City Center</item>
+        <item>Al-Huson</item>
+        <item>Al-Mazar</item>
+        <item>Al-Ramtha</item>
+        <item>Al-Taibeh</item>
+        <item>Beit Ras</item>
+        <item>Al-Barha</item>
+    </string-array>
+
+    <!-- Districts in Aqaba -->
+    <string-array name="aqaba_districts">
+        <item>Al-Hafayer</item>
+        <item>Al-Mahdoud</item>
+        <item>Al-Rashdiyah</item>
+        <item>الصالحية</item>
+        <item>السوق</item>
+        <item>المنارة</item>
+    </string-array>
+
+    <!-- Districts in Madaba -->
+    <string-array name="madaba_districts">
+        <item>City Center</item>
+        <item>Al-Jizah</item>
+        <item>Al-Maghtas</item>
+        <item>Al-Muhatta</item>
+        <item>Al-Rumaymin</item>
+        <item>Mount Nebo</item>
+    </string-array>
+
+    <!-- Districts in Salt -->
+    <string-array name="salt_districts">
+        <item>City Center</item>
+        <item>Wadi Shueib</item>
+        <item>Fuheis</item>
+        <item>Mahis</item>
+        <item>Ein Al-Basha</item>
+        <item>Yarqa</item>
+    </string-array>
+
+    <!-- Districts in Jerash -->
+    <string-array name="jerash_districts">
+        <item>City Center</item>
+        <item>Suf</item>
+        <item>Sakib</item>
+        <item>Al-Ketteh</item>
+        <item>Anjara</item>
+    </string-array>
+
+    <!-- Districts in Ma'an -->
+    <string-array name="maan_districts">
+        <item>City Center</item>
+        <item>Petra</item>
+        <item>Al-Husseinieh</item>
+        <item>Al-Jafr</item>
+        <item>Al-Manshiyah</item>
+    </string-array>
+
+    <!-- Districts in Karak -->
+    <string-array name="karak_districts">
+        <item>City Center</item>
+        <item>Al-Mazar</item>
+        <item>Al-Qatraneh</item>
+        <item>Ghor Al-Safi</item>
+        <item>Ghor Al-Mazraa</item>
+    </string-array>
+
+    <!-- Districts in Tafilah -->
+    <string-array name="tafilah_districts">
+        <item>City Center</item>
+        <item>Al-Ain Al-Bayda</item>
+        <item>Buseira</item>
+        <item>Gharandal</item>
+        <item>Rashadiya</item>
+    </string-array>
+
+    <!-- Districts in Ajloun -->
+    <string-array name="ajloun_districts">
+        <item>City Center</item>
+        <item>Anjara</item>
+        <item>Kufranjah</item>
+        <item>Sakhrah</item>
+        <item>Al-Wahadneh</item>
+    </string-array>
+
+    <!-- Districts in Mafraq -->
+    <string-array name="mafraq_districts">
+        <item>City Center</item>
+        <item>Al-Ruwaished</item>
+        <item>Al-Safawi</item>
+        <item>Al-Khalidiyah</item>
+        <item>Al-Mafraq Al-Jadeedah</item>
+    </string-array>
 
 </resources>

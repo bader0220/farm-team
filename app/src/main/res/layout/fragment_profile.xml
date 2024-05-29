@@ -1,35 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.main.fragments.ProfileFragment">
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
     <FrameLayout
         android:id="@+id/frameRequireLogin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
         tools:ignore="UselessParent">
+
         <Button
+            android:id="@+id/btnToAuth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/login" />
     </FrameLayout>
 
-    <FrameLayout
+
+    <LinearLayout
+        android:id="@+id/frameProfile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frameProfile">
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUserImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/place_holder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:id="@+id/txtUserFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+                <TextView
+                    android:id="@+id/txtAccountType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/trader_account"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="example@example.com"
+                    android:textAppearance="@style/TextAppearance.Material3.BodySmall" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtUserBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/loren"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditProfile"
+            style="@style/Widget.Material3.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            app:icon="@drawable/edit" />
+
+        <LinearLayout
+            android:id="@+id/btnMyFarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="?colorPrimary"
+                android:elevation="2dp"
+                app:contentPadding="8dp"
+                app:shapeAppearance="?shapeAppearanceSmallComponent"
+                app:srcCompat="@drawable/baseline_email_24"
+                app:tint="?colorOnSecondary"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/my_farms"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                app:tint="?attr/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnMyReservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="?colorPrimary"
+                android:elevation="2dp"
+                app:contentPadding="8dp"
+                app:shapeAppearance="?shapeAppearanceSmallComponent"
+                app:srcCompat="@drawable/baseline_email_24"
+                app:tint="?colorOnSecondary"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/my_reservations"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                app:tint="?attr/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnTermsOfServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="?colorPrimary"
+                android:elevation="2dp"
+                app:contentPadding="8dp"
+                app:shapeAppearance="?shapeAppearanceSmallComponent"
+                app:srcCompat="@drawable/baseline_email_24"
+                app:tint="?colorOnSecondary"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/terms_of_service"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                app:tint="?attr/colorPrimary" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="?colorPrimary"
+                android:elevation="2dp"
+                app:contentPadding="8dp"
+                app:shapeAppearance="?shapeAppearanceSmallComponent"
+                app:srcCompat="@drawable/baseline_email_24"
+                app:tint="?colorOnSecondary"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/logout"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
 
         </LinearLayout>
-    </FrameLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>

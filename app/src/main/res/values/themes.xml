@@ -49,10 +49,14 @@
         <item name="colorSurfaceContainer">@color/md_theme_surfaceContainer</item>
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
+        <item name="android:textColor">@color/md_theme_onSurface</item>
+        <item name="android:textColorPrimary">@color/md_theme_onSurface</item>
+        <item name="android:textColorSecondary">@color/md_theme_onSurface</item>
     </style>
 
     <style name="AppButton" parent="Widget.Material3.Button">
         <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="textFillColor">?attr/colorTertiary</item>
     </style>
 
     <style name="editTextLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
@@ -64,13 +68,32 @@
         <item name="boxCornerRadiusBottomStart">10dp</item>
         <item name="boxCornerRadiusBottomEnd">10dp</item>
     </style>
+    <style name="autoCompleteTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">?attr/colorSecondaryContainer</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="itemTextAppearance">@style/labelMedium</item>
+        <item name="textFillColor">?attr/colorTertiary</item>
+        <item name="android:textColor">?attr/colorTertiary</item>
+    </style>
 
 
     <style name="displaySmall" parent="TextAppearance.Material3.DisplaySmall">
         <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
     </style>
-    <style name="labelMedium" parent="TextAppearance.Material3.LabelMedium">
+    <style name="bodyLarge" parent="TextAppearance.Material3.BodyLarge">
         <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="labelMedium" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="fontFamily">@font/rubik_regular</item>
     </style>
 
 
@@ -81,6 +104,26 @@
         <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="btnDelete" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="backgroundTint">?attr/colorOnErrorContainer</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="icon">@drawable/delete</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnUpdate" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="icon">@drawable/edit</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:paddingVertical" tools:targetApi="o">@dimen/btn_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
 
 </resources>
 

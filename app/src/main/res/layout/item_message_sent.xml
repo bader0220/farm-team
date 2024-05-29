@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you"
+        android:layout_gravity="end"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_you"
+        android:layout_gravity="end"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtMessageContent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimaryFixed"
+            android:text="@string/loren" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -5,16 +5,22 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import me.smartfarm.R;
 import me.smartfarm.ui.auth.fragments.LoginFragment;
 import me.smartfarm.ui.auth.fragments.RegisterFragment;
+import me.smartfarm.ui.auth.fragments.RegisterUserInfoFragment;
+import android.content.Context;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class AuthPagerAdapter extends FragmentPagerAdapter {
-    public AuthPagerAdapter(@NonNull FragmentManager fm) {
-        super(fm);
-    }
+    private final Context mContext;
 
-    public AuthPagerAdapter(@NonNull FragmentManager fm, int behavior) {
-        super(fm, behavior);
+    public AuthPagerAdapter(@NonNull FragmentManager fm, @NonNull Context context) {
+        super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        this.mContext = context;
     }
 
     @NonNull
@@ -37,12 +43,12 @@ public class AuthPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Set tab titles (optional)
+        // Set tab titles from resources
         switch (position) {
             case 0:
-                return "تسجيل الدخول";
+                return mContext.getString(R.string.tab_login);
             case 1:
-                return "انشاء حساب";
+                return mContext.getString(R.string.tab_register);
             default:
                 return null;
         }
